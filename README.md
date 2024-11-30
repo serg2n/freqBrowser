@@ -14,7 +14,7 @@ Visualization of the frequency spectrum of an audio signal for different sources
 
 # Screenshot
 ![](img/screen.png)
-
+![](https://github.com/serg2n/freqBrowser/blob/main/img/screen.PNG)
 
 Explanation of the picture:
 
