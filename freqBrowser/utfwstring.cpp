@@ -18,3 +18,14 @@ std::string wstring_to_utf8(std::wstring const& str)
         std::codecvt_utf8_utf16<wchar_t>>> converter;
   return converter.to_bytes(str);
 }
+std::vector<std::wstring> Split(const std::wstring& str, wchar_t delimiter)
+{
+    std::vector<std::wstring> tokens;
+    std::wstring token;
+    std::wstringstream tokenStream(str);
+    while (std::getline(tokenStream, token, delimiter))
+    {
+       tokens.push_back(token);
+    }
+    return tokens;
+}
