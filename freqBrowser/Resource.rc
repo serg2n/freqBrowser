@@ -1,0 +1,120 @@
+// Resource.rc
+// Этот файл был автоматически создан RisohEditor 5.8.5.
+// † <-- Этот крестик помогает определять UTF-8.
+
+#include "resource.h"
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include <windows.h>
+#include <commctrl.h>
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#pragma code_page(65001) // UTF-8
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+LANGUAGE LANG_ENGLISH, SUBLANG_DEFAULT
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_DIALOG
+
+IDD_DIALOG1 DIALOGEX 0, 0, 605, 324
+CAPTION "Freqbrowser"
+STYLE DS_CENTER | DS_MODALFRAME | DS_SHELLFONT | WS_POPUPWINDOW | WS_CAPTION | WS_MINIMIZE | WS_VISIBLE | WS_MINIMIZEBOX
+EXSTYLE WS_EX_APPWINDOW
+FONT 8, "MS Shell Dlg", 0, 0, 1
+{
+    CONTROL "", IDC_STATIC4, "STATIC", SS_SUNKEN | SS_NOTIFY | SS_BITMAP, 49, 26, 551, 235
+    PUSHBUTTON "", IDC_BUTTT, 27, 162, 18, 16, BS_ICON
+    PUSHBUTTON "", IDC_BUTTB, 27, 186, 18, 16, BS_ICON
+    PUSHBUTTON "", IDC_BUTTL, 295, 291, 18, 16, BS_ICON
+    PUSHBUTTON "", IDC_BUTTR, 322, 291, 18, 16, BS_ICON
+    CONTROL "", IDC_TRACKBAR1, "msctls_trackbar32", TBS_AUTOTICKS | WS_TABSTOP, 289, 266, 286, 21
+    AUTOCHECKBOX "Left", IDC_CHKL, 6, 52, 39, 14
+    AUTOCHECKBOX "Right", IDC_CHKR, 6, 71, 40, 15
+    COMBOBOX IDC_COMBO, 49, 9, 216, 300, CBS_HASSTRINGS | CBS_AUTOHSCROLL | CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT "dB", IDC_STATICD, 30, 150, 15, 10
+    CTEXT "", IDC_STATBAND, 359, 294, 138, 14
+    CONTROL "", IDC_STATPLAY, "STATIC", SS_NOTIFY | SS_BITMAP | WS_GROUP, 145, 268, 22, 22, WS_EX_NOPARENTNOTIFY
+    PUSHBUTTON "About", IDC_ABOUT, 54, 272, 45, 14
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_MANIFEST
+
+41 24 "res/1033_Manifest_41.manifest"
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_BITMAP
+
+IDB_PLAY BITMAP "res/1049_Bitmap_100.bmp"
+
+IDB_PAUSE BITMAP "res/1049_Bitmap_101.bmp"
+
+IDB_SPECTR BITMAP "res/1049_Bitmap_102.bmp"
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_DIALOG
+
+IDD_ABOUT DIALOG 0, 0, 176, 118
+CAPTION "About Freqbrowser"
+STYLE DS_CENTER | DS_MODALFRAME | WS_POPUPWINDOW | WS_CAPTION
+FONT 9, "MS Shell Dlg"
+{
+    DEFPUSHBUTTON "OK", IDOK, 65, 97, 42, 14
+    CONTROL "", IDC_STATSPECTR, "STATIC", SS_BITMAP | WS_GROUP, 18, 7, 140, 58
+    CONTROL "Version 1.0  Copyright 2024 \n Sergej Novikov sergej2novikov@gmail.com", -1, "EDIT", ES_READONLY | ES_MULTILINE | ES_CENTER | WS_TABSTOP, 25, 71, 126, 22
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+// RT_GROUP_ICON
+
+IDI_LOGO ICON "res/1049_Icon_99.ico"
+
+IDI_UP ICON "res/1049_Icon_100.ico"
+
+IDI_DOWN ICON "res/1049_Icon_101.ico"
+
+IDI_LEFT ICON "res/1049_Icon_102.ico"
+
+IDI_RIGHT ICON "res/1049_Icon_103.ico"
+
+//////////////////////////////////////////////////////////////////////////////
+
+// TEXTINCLUDE
+
+#ifdef APSTUDIO_INVOKED
+
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include <windows.h>\r\n"
+    "#include <commctrl.h>\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+//////////////////////////////////////////////////////////////////////////////
+
