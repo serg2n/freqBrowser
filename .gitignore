@@ -3,6 +3,7 @@
 ui_*.h
 moc_*.cpp
 *.Debug
+*.exe
 *.exp
 *.idb
 *.ncb
